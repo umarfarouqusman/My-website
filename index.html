@@ -3,51 +3,173 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Umar Usman</title>
+
+  <title>Umar Usman | Personal Website</title>
+
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
       font-family: Arial, sans-serif;
-      background: #f2f2f2;
+    }
+
+    body {
+      background: #f4f7fb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 55px 20px;
       text-align: center;
     }
-    header {
-      background: #111;
-      color: white;
-      padding: 40px 20px;
-    }
-    h1 {
+
+    header h1 {
       font-size: 40px;
+      margin-bottom: 10px;
     }
-    .box {
+
+    header p {
+      font-size: 18px;
+      color: #d1d5db;
+    }
+
+    nav {
       background: white;
-      margin: 30px auto;
-      padding: 30px;
-      max-width: 600px;
-      border-radius: 15px;
+      padding: 16px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
-    button {
-      padding: 12px 25px;
-      border: none;
-      border-radius: 8px;
-      background: #111;
+
+    nav a {
+      color: #111827;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 30px 20px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    section h2 {
+      margin-bottom: 15px;
+      color: #111827;
+    }
+
+    .welcome {
+      text-align: center;
+    }
+
+    .welcome h2 {
+      font-size: 30px;
+    }
+
+    .buttons {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      background: #111827;
       color: white;
-      font-size: 16px;
+      padding: 12px 20px;
+      border-radius: 8px;
+    }
+
+    .contact p {
+      margin: 12px 0;
+      font-size: 17px;
+    }
+
+    .contact a {
+      color: #111827;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      background: #111827;
+      color: white;
+      padding: 25px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 30px;
+      }
+
+      section {
+        margin: 20px 10px;
+      }
     }
   </style>
 </head>
+
 <body>
 
-<header>
-  <h1>Welcome to Umar Usman's Website</h1>
-  <p>My Personal Website</p>
-</header>
+  <header>
+    <h1>Umar Usman</h1>
+    <p>Welcome to My Personal Website</p>
+  </header>
 
-<div class="box">
-  <h2>About Me</h2>
-  <p>Welcome to my website. This is my personal space on the internet.</p>
-  <button>Welcome</button>
-</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home" class="welcome">
+    <h2>Welcome 👋</h2>
+    <p>
+      This is the official personal website of Umar Usman.
+      Welcome to my website.
+    </p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Welcome to my personal website. This website is created
+      to share information, projects, learning resources and
+      useful updates.
+    </p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+
+    <p>📞 Phone:
+      <a href="tel:09126063233">09126063233</a>
+    </p>
+
+    <p>💬 WhatsApp:
+      <a href="https://wa.me/2349126063233">Chat on WhatsApp</a>
+    </p>
+
+    <p>📧 Email:
+      <a href="mailto:umarfarouqusman2019@gmail.com">
+        umarfarouqusman2019@gmail.com
+      </a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2026 Umar Usman. All Rights Reserved.</p>
+  </footer>
 
 </body>
 </html>
